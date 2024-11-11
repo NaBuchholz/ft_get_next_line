@@ -6,7 +6,7 @@
 /*   By: nbuchhol <nbuchhol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 13:06:59 by nbuchhol          #+#    #+#             */
-/*   Updated: 2024/11/05 13:09:36 by nbuchhol         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:06:51 by nbuchhol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,13 @@
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
-# endif
+# endif // END BUFFER_SIZE
 
-char	*get_next_line(int fd);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strjoin(char *s1, char *s2);
 size_t	ft_strlen(const char *s);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strjoin(const char *s1, const char *s2);
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
+char	*get_next_line(int fd);
 
-#endif
+#endif // END GET_NEXT_LINE
